@@ -57,6 +57,7 @@ create table if not exists oauth_client_token (
 
 
 create table if not exists oauth_access_token (
+  id serial,
   token_id VARCHAR(256),
   token BYTEA,
   authentication_id VARCHAR(256) PRIMARY KEY,
